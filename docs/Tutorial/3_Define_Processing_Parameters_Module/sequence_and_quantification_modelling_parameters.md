@@ -1,0 +1,1 @@
+# Global Acquisition and Quantification Modelling Parameters

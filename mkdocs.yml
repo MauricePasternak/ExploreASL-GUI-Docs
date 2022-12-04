@@ -1,0 +1,39 @@
+site_name: ExploreASL GUI
+
+nav:
+  - Home: index.md
+  - Installation:
+      - "For Users": "Installation/getting_started_for_users.md"
+      - "For Developers": "Installation/getting_started_for_developers.md"
+  - "User Guide / Tutorial":
+      - "Quick Preface": "Tutorial/quick_preface.md"
+      - "Importing to BIDS":
+          - "Define Filepaths and Folder Structure": "Tutorial/1_Import_Module/defining_folder_structure.md"
+          - "Define Aliases": "Tutorial/1_Import_Module/defining_aliases.md"
+          - "Define Contexts": "Tutorial/1_Import_Module/defining_contexts.md"
+          - "Running ExploreASL Import Module": "Tutorial/1_Import_Module/running_exploreasl_import_module.md"
+      - "Editing BIDS Fields":
+          - "Loading a Study": "Tutorial/2_Editing_BIDS_Fields_Module/loading_a_study.md"
+          - "Editing Values": "Tutorial/2_Editing_BIDS_Fields_Module/editing_values.md"
+          - "Adding and Removing BIDS Fields": "Tutorial/2_Editing_BIDS_Fields_Module/adding_and_removing_bids_fields.md"
+          - "Resetting and Saving Changes": "Tutorial/2_Editing_BIDS_Fields_Module/resetting_and_saving_changes.md"
+      - "Processing Studies":
+          - "Process a Study": "Tutorial/4_Processing_Module/processing_a_study.md"
+          - "Re-run a Study": "Tutorial/4_Processing_Module/rerunning_a_study.md"
+      - "Visualizating your ASL Dataset":
+          - "Loading in a Study": "Tutorial/5_Data_Visualization/loading_a_dataset.md"
+          - "Clarifying Data Types": "Tutorial/5_Data_Visualization/clarifying_datatypes.md"
+          - "Plotting and Interactivity Overview": "Tutorial/5_Data_Visualization/plotting_and_interactivity.md"
+          - "Subsetting the Data": "Tutorial/5_Data_Visualization/subsetting_data.md"
+          - "Adjusting Plot Settings": "Tutorial/5_Data_Visualization/adjusting_plot_settings.md"
+          - "Exporting Results": "Tutorial/5_Data_Visualization/exporting_plot_and_images.md"
+  - FAQ: "FAQ/frequently_asked_questions.md"
+  - Contact: "contact.md"
+  - MkDocs: mkdocs.md
+
+theme:
+  name: "material"
+  palette:
+    scheme: "light"
+  features:
+    - navigation.expand
