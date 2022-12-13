@@ -1,2 +1,0 @@
-# Plotting and Interactivity Overview
-

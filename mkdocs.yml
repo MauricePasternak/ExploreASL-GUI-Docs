@@ -1,39 +1,82 @@
 site_name: ExploreASL GUI
+repo_url: https://github.com/MauricePasternak/ExploreASL-GUI-Docs
+site_url: https://github.com/MauricePasternak/ExploreASL-GUI-Docs
 
 nav:
   - Home: index.md
   - Installation:
-      - "For Users": "Installation/getting_started_for_users.md"
-      - "For Developers": "Installation/getting_started_for_developers.md"
-  - "User Guide / Tutorial":
-      - "Quick Preface": "Tutorial/quick_preface.md"
+      - "For Users": "Installation/Users.md"
+      - "For Developers": "Installation/Developers.md"
+
+  - Tutorial:
+      - "Introduction":
+          - "Tutorial's Dataset": "Tutorial/0_Preface/Tutorials_Dataset.md"
+          - "Starting Page": "Tutorial/0_Preface/Starting_Page.md"
+
       - "Importing to BIDS":
-          - "Define Filepaths and Folder Structure": "Tutorial/1_Import_Module/defining_folder_structure.md"
-          - "Define Aliases": "Tutorial/1_Import_Module/defining_aliases.md"
-          - "Define Contexts": "Tutorial/1_Import_Module/defining_contexts.md"
-          - "Running ExploreASL Import Module": "Tutorial/1_Import_Module/running_exploreasl_import_module.md"
+          - "Module Overview": "Tutorial/1_Import/0_Overview.md"
+          - "Define Filepaths and Folder Structure": "Tutorial/1_Import/1_Defining_Folder_Structure.md"
+          - "Define Aliases": "Tutorial/1_Import/2_Defining_Aliases.md"
+          - "Define Contexts": "Tutorial/1_Import/3_Defining_Contexts.md"
+          - "Running ExploreASL Import Module": "Tutorial/1_Import/4_Running_Exploreasl_Import.md"
+
       - "Editing BIDS Fields":
-          - "Loading a Study": "Tutorial/2_Editing_BIDS_Fields_Module/loading_a_study.md"
-          - "Editing Values": "Tutorial/2_Editing_BIDS_Fields_Module/editing_values.md"
-          - "Adding and Removing BIDS Fields": "Tutorial/2_Editing_BIDS_Fields_Module/adding_and_removing_bids_fields.md"
-          - "Resetting and Saving Changes": "Tutorial/2_Editing_BIDS_Fields_Module/resetting_and_saving_changes.md"
+          - "Module Overview": "Tutorial/2_BIDSDataGrid/0_Overview.md"
+          - "Loading a Study": "Tutorial/2_BIDSDataGrid/1_Load_A_Study.md"
+          - "Editing Values": "Tutorial/2_BIDSDataGrid/2_Editing_Values.md"
+          - "Adding BIDS Fields": "Tutorial/2_BIDSDataGrid/3_Adding_BIDS_Fields.md"
+          - "Removing BIDS Fields": "Tutorial/2_BIDSDataGrid/4_Removing_BIDS_Fields.md"
+          - "Reloading Data": "Tutorial/2_BIDSDataGrid/5_Reloading_Data.md"
+          - "Hiding, Filtering, and Resizing": "Tutorial/2_BIDSDataGrid/6_Hiding_Filtering_Resizing.md"
+
+      - "Defining Runtime Parameters":
+          - "Module Overview": "Tutorial/3_DataPar/0_Overview.md"
+          - "Study Parameters": "Tutorial/3_DataPar/1_StudyPars.md"
+          - "Default ASL Sequence & Modeling Parameters": "Tutorial/3_DataPar/2_SeqPars.md"
+          - "ExploreASL Processing Parameters": "Tutorial/3_DataPar/3_ProcPars.md"
+          - "Saving and Loading Configuations": "Tutorial/3_DataPar/4_Saving_And_Loading.md"
+
       - "Processing Studies":
-          - "Process a Study": "Tutorial/4_Processing_Module/processing_a_study.md"
-          - "Re-run a Study": "Tutorial/4_Processing_Module/rerunning_a_study.md"
+          - "Module Overview": "Tutorial/4_RunEASL/0_Overview.md"
+          - "Process a Study": "Tutorial/4_RunEASL/1_RunEASL.md"
+          - "Re-run a Study": "Tutorial/4_RunEASL/2_ReRun.md"
+
       - "Visualizating your ASL Dataset":
-          - "Loading in a Study": "Tutorial/5_Data_Visualization/loading_a_dataset.md"
-          - "Clarifying Data Types": "Tutorial/5_Data_Visualization/clarifying_datatypes.md"
-          - "Plotting and Interactivity Overview": "Tutorial/5_Data_Visualization/plotting_and_interactivity.md"
-          - "Subsetting the Data": "Tutorial/5_Data_Visualization/subsetting_data.md"
-          - "Adjusting Plot Settings": "Tutorial/5_Data_Visualization/adjusting_plot_settings.md"
-          - "Exporting Results": "Tutorial/5_Data_Visualization/exporting_plot_and_images.md"
-  - FAQ: "FAQ/frequently_asked_questions.md"
-  - Contact: "contact.md"
-  - MkDocs: mkdocs.md
+          - "Module Overview": "Tutorial/5_DataViz/0_Overview.md"
+          - "Loading in a Study": "Tutorial/5_DataViz/1_Loading_Data.md"
+          - "Clarifying Data Types": "Tutorial/5_DataViz/2_Changing_DTypes.md"
+          - "Plotting and Interactivity Overview": "Tutorial/5_DataViz/3_Plot_Overview.md"
+          - "Scatterplot": "Tutorial/5_DataViz/4_Scatter_Plot.md"
+          - "Swarmplot": "Tutorial/5_DataViz/5_Swarm_Plot.md"
+          - "Interactive MRI View": "Tutorial/5_DataViz/6_MRI_View.md"
+          - "Data Subsetting": "Tutorial/5_DataViz/7_Data_Subsetting.md"
+          - "Exporting Plots": "Tutorial/5_DataViz/8_Exporting.md"
+          
+  - License: "License.md"
+  - Requirements: "Requirements.md"
+  - FAQ: "FAQ/FAQ.md"
+  - Contact: "Contact.md"
 
 theme:
   name: "material"
+  custom_dir: overrides
+  language: en
+  logo: "assets/img/ExploreASLGUIIcon.png"
+  favicon: "assets/img/favicon.ico"
   palette:
     scheme: "light"
   features:
     - navigation.expand
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  version:
+    provider: mike

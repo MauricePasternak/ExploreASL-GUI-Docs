@@ -1,1 +1,0 @@
-# Adding and Removing BIDS Fields

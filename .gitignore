@@ -1,1 +1,9 @@
+# Dev Folders
 .vscode
+.venv
+
+# Build Folders
+site
+
+# Editing Files
+*.pptx

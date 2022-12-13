@@ -1,1 +1,0 @@
-# Rerunning A Study
