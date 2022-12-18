@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://github.com/MauricePasternak/ExploreASL-GUI-Docs/0.4/Tutorial/2_BIDSDataGrid/1_Load_A_Study/">
+        <link rel="canonical" href="https://github.com/MauricePasternak/ExploreASL-GUI-Docs/0.4.0/Tutorial/2_BIDSDataGrid/1_Load_A_Study/">
       
       <link rel="icon" href="../../../assets/img/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
@@ -96,7 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="ExploreASL GUI" class="md-header__button md-logo" aria-label="ExploreASL GUI" data-md-component="logo">
       
-  <img src="../../../assets/img/ExploreASLGUIIcon.png" alt="logo">
+  <img src="../../../assets/img/ExploreASLGUI_Logo_DarkMode.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -156,7 +156,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/MauricePasternak/ExploreASL-GUI-Docs" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/MauricePasternak/ExploreASL-GUI" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -193,14 +193,14 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="ExploreASL GUI" class="md-nav__button md-logo" aria-label="ExploreASL GUI" data-md-component="logo">
       
-  <img src="../../../assets/img/ExploreASLGUIIcon.png" alt="logo">
+  <img src="../../../assets/img/ExploreASLGUI_Logo_DarkMode.png" alt="logo">
 
     </a>
     ExploreASL GUI
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/MauricePasternak/ExploreASL-GUI-Docs" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/MauricePasternak/ExploreASL-GUI" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -569,6 +569,40 @@
   <a href="#what-is-loaded-in" class="md-nav__link">
     What is loaded in?
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-can-go-wrong-when-loading-in-a-study" class="md-nav__link">
+    What can go wrong when loading in a study?
+  </a>
+  
+    <nav class="md-nav" aria-label="What can go wrong when loading in a study?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-json-sidecar-is-corrupted-or-has-a-syntax-error" class="md-nav__link">
+    1. The JSON sidecar is corrupted or has a syntax error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-a-field-within-the-sidecar-has-a-value-whose-type-that-is-completely-incompatible-with-the-expected-type" class="md-nav__link">
+    2. A field within the sidecar has a value whose "type" that is completely incompatible with the expected "type"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-a-field-within-the-sidecar-has-a-value-that-is-of-the-correct-type-but-is-not-bids-compliant" class="md-nav__link">
+    3. A field within the sidecar has a value that is of the correct "type" but is not BIDS compliant
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1094,6 +1128,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#what-can-go-wrong-when-loading-in-a-study" class="md-nav__link">
+    What can go wrong when loading in a study?
+  </a>
+  
+    <nav class="md-nav" aria-label="What can go wrong when loading in a study?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-json-sidecar-is-corrupted-or-has-a-syntax-error" class="md-nav__link">
+    1. The JSON sidecar is corrupted or has a syntax error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-a-field-within-the-sidecar-has-a-value-whose-type-that-is-completely-incompatible-with-the-expected-type" class="md-nav__link">
+    2. A field within the sidecar has a value whose "type" that is completely incompatible with the expected "type"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-a-field-within-the-sidecar-has-a-value-that-is-of-the-correct-type-but-is-not-bids-compliant" class="md-nav__link">
+    3. A field within the sidecar has a value that is of the correct "type" but is not BIDS compliant
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1108,7 +1176,7 @@
                 
                   
 
-  <a href="https://github.com/MauricePasternak/ExploreASL-GUI-Docs/edit/master/docs/Tutorial/2_BIDSDataGrid/1_Load_A_Study.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/MauricePasternak/ExploreASL-GUI/edit/master/docs/Tutorial/2_BIDSDataGrid/1_Load_A_Study.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
@@ -1117,7 +1185,8 @@
 <h1 id="loading-a-study">Loading a Study</h1>
 <hr />
 <p>Loading in a study is as simple as specifying the path to the study's root directory. The program will then automatically detect the BIDS structure of the study and load all the relevant information to be presented in spreadsheet form:</p>
-<p><img src="../../../assets/img/Tutorial/BIDSDataGrid/1_Load_A_Study/BIDSDG_LoadedInDataframe.png" /></p>
+<p><img alt="BIDSDG_LoadedInDataframe" src="../../../assets/img/Tutorial/BIDSDataGrid/1_Load_A_Study/BIDSDG_LoadedInDataframe.png" /></p>
+<p>The errors may be ignored for now (as they are deliberate). They will be discussed very shortly!</p>
 <h2 id="what-is-loaded-in">What is loaded in?</h2>
 <p>At minimum, the spreadsheet will always contain the following two columns:
 - <code>ID</code>: This is the spreadsheet's index ID. It is used to keep track of the row's position in the spreadsheet.
@@ -1173,6 +1242,42 @@
 </li>
 </ul>
 <p>In future updates for BIDS fields will be included. However, for 99% of the cases, the above fields should be sufficient to use with ExploreASL.</p>
+<h2 id="what-can-go-wrong-when-loading-in-a-study">What can go wrong when loading in a study?</h2>
+<p>There are generally 3 sources of errors that can occur when loading in a study:</p>
+<h3 id="1-the-json-sidecar-is-corrupted-or-has-a-syntax-error">1. The JSON sidecar is corrupted or has a syntax error</h3>
+<p>This isn't a common reason, but it can happen for users who are not familiar with JSON syntax and start tweaking the sidecars manually (hence why this software, and this module in particular, should be used as a tool as a safer alternative <img alt="😜" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f61c.svg" title=":stuck_out_tongue_winking_eye:" />). Let's say we purposefully change the syntax of one of the files. Here's what happens:</p>
+<p><img alt="BIDSDG_Loading_JSONCorruptExample" src="../../../assets/img/Tutorial/BIDSDataGrid/1_Load_A_Study/BIDSDG_Loading_JSONCorruptExample.png" /></p>
+<p>The program will automatically avoid loading in the corrupted sidecar(s) and will indicate which files are responsible for the error. The other sidecars will still be loaded in.</p>
+<h3 id="2-a-field-within-the-sidecar-has-a-value-whose-type-that-is-completely-incompatible-with-the-expected-type">2. A field within the sidecar has a value whose "type" that is completely incompatible with the expected "type"</h3>
+<p>For those with zero programming experience, it may be interesting for you to know that the content of JSON files has generally 6 types of values:</p>
+<ul>
+<li>number</li>
+<li>string (regular text)</li>
+<li>boolean (true or false)</li>
+<li>null (an explicit absence of a value)</li>
+<li>a collection of the above types (array)</li>
+<li>another mapping of field-value pairs (object)</li>
+</ul>
+<p>BIDS sidecars are no exception to this, and certain BIDS fields are expected to have a specific type(s) of value(s). If this comes as a surprise, you can read more about it <a href="https://bids-specification.readthedocs.io/en/stable/glossary.html#boolean-formats">in the BIDS documentation on the formats</a>.</p>
+<p>The spreadsheet also makes certain assumptions about the type of value for a given field (i.e. boolean for <code>BackgroundSuppression</code>, number for <code>MagneticFieldStrength</code>, etc.). If the value of a field is incompatible with the expected type, the program will throw an error and will not load in the sidecar(s) that are responsible for the error. Here's an example if we purposefully change the type of value for several fields in one of the sidecars:</p>
+<p><img alt="BIDSDG_Loading_TypeIncompatibleExample" src="../../../assets/img/Tutorial/BIDSDataGrid/1_Load_A_Study/BIDSDG_Loading_TypeIncompatibleExample.png" /></p>
+<p>Once again, an error message will be displayed with the name of the sidecar(s) that are responsible for the error. In addition, the exact erring field(s) will be summarized together with the nature of the error or feedback of what type was expected instead.</p>
+<h3 id="3-a-field-within-the-sidecar-has-a-value-that-is-of-the-correct-type-but-is-not-bids-compliant">3. A field within the sidecar has a value that is of the correct "type" but is not BIDS compliant</h3>
+<p>Okay, let's revisit our example from earlier where we noticed that 4 errors were present in our dataset:</p>
+<p><img alt="BIDSDG_LoadedInDataframe" src="../../../assets/img/Tutorial/BIDSDataGrid/1_Load_A_Study/BIDSDG_LoadedInDataframe.png" /></p>
+<p>No explicit error message was displayed, as everything could be loaded in. However we do have feedback in the form of the <code>View Errors</code> button in the toolbar. Let's click on it:</p>
+<p><img alt="BIDSDG_Loading_BIDSInvalidExamplePart1" src="../../../assets/img/Tutorial/BIDSDataGrid/1_Load_A_Study/BIDSDG_Loading_BIDSInvalidExamplePart1.png" /></p>
+<p>How curious! It seems that the <code>Labeling Duration</code> field is not BIDS compliant in the for the latter 4 sidecars because they were the Siemens PASL acquisitions. Recall, Labeling Duration is not a field that should be present for PASL scans, which is exactly what the error message is telling us. This is further reinforced by moving to the indicated location in the spreadsheet:</p>
+<p><img alt="BIDSDG_Loading_BIDSInvalidExamplePart2" src="../../../assets/img/Tutorial/BIDSDataGrid/1_Load_A_Study/BIDSDG_Loading_BIDSInvalidExamplePart2.png" /></p>
+<p>And we see that the cells for these erroneous fields are highlighted in red. This is a feature that is present for all the fields that are not BIDS compliant.</p>
+<p>From here, it depends on the nature of the error. Typically, the user will have to do one of two things:</p>
+<ul>
+<li>Edit the value of the field to make it BIDS compliant.</li>
+<li>Remove the field's value from the sidecar.</li>
+</ul>
+<p>For this error, the latter is the correct course of action. Spoiler alert for future sections, but to delete a cell, simply select it and press the <code>Delete</code> key on your keyboard.</p>
+<p><img alt="BIDSDG_Loading_BIDSInvalidExamplePart3" src="../../../assets/img/Tutorial/BIDSDataGrid/1_Load_A_Study/BIDSDG_Loading_BIDSInvalidExamplePart3.png" /></p>
+<p>Okay, much better. Now we have 0 errors and 0 warnings. We can now proceed to the next section to learn how to edit the values of the fields.</p>
 
 
 
