@@ -1,4 +1,4 @@
-# Swarmplot 
+# Swarmplot
 
 ---
 
@@ -6,7 +6,7 @@ In general, swarmplots are used to visualize the distribution of a continuous va
 
 ## Swarmplot Visuals
 
-<img src="../../../assets/img/Tutorial/DataViz/5_Swarm_Plot/DataViz_Plot_Swarmplot_Settings.png">
+![DataViz_Plot_Swarmplot_Settings](../../assets/img/Tutorial/DataViz/5_Swarm_Plot/DataViz_Plot_Swarmplot_Settings.png)
 
 In general, the same settings are available for swarmplots as for scatterplots. The primary differences lie in a few additional marker settings:
 
@@ -17,4 +17,4 @@ In general, the same settings are available for swarmplots as for scatterplots. 
 
 The following is an example of a swarmplot with the adjusted display settings:
 
-<img src="../../../assets/img/Tutorial/DataViz/5_Swarm_Plot/DataViz_Plot_Swarmplot_Prettified.png">
+![DataViz_Plot_Swarmplot_Prettified](../../assets/img/Tutorial/DataViz/5_Swarm_Plot/DataViz_Plot_Swarmplot_Prettified.png)

@@ -8,7 +8,7 @@ Finally, it may be easily missable that there is an option in the lower right co
 
 A file dialog will open to allow you to specify the location and name of the file, where it will then be saved.
 
---- 
+---
 
 # Concluding Remarks
 
@@ -19,4 +19,3 @@ For commonly asked questions that may not have been covered in this tutorial, pl
 For contacting the ExploreASL team, please refer to the [Contact](../../Contact.md) page.
 
 ---
-

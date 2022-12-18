@@ -5,11 +5,12 @@
 This section is for developers who want to contribute to the development of the software. If you are a user, please refer to the [User Installation](../Installation/Users.md) section.
 
 As with the user installation, there are 3 components required for working with this software:
+
 - The graphical user interface (GUI) software itself (this program)
 - An ExploreASL version (compiled or from GitHub)
 - A MATLAB version (regular or MATLAB Runtime)
 
-Instructions for obtaining the latter two were outlied in the [User Installation](../Installation/Users.md) section.
+Instructions for obtaining the latter two were outlied in the [User Installation](../Installation/Users.md#exploreasl) section.
 
 ## Prerequisites
 
@@ -25,7 +26,7 @@ Instead of heading over to the Releases page on the GitHub repository of this GU
 git clone https://github.com/MauricePasternak/ExploreASL-GUI.git
 ```
 
-## Installing Dependencies
+## Installing/Updating Dependencies
 
 Once you have the source code, you will need to install all the dependencies for the GUI.
 
@@ -40,6 +41,8 @@ Then install all the dependencies:
 ```bash
 yarn install
 ```
+
+**:information_source: NOTE:** If you are pulling an updated version of the GUI from `dev` or `main`, you will need to run this command again to update the dependencies.
 
 ## Running the GUI
 
@@ -61,7 +64,10 @@ If you want to package the GUI for distribution, you can do so via command:
 yarn make
 ```
 
-This will create a folder in the root directory of the repository called `out`. This folder will contain the packaged GUI for your operating system.
+This will create a folder in the root directory of the repository called `out`. This folder will contain:
+
+- A folder called `ExploreASL-GUI-win32-x64` (or `ExploreASL-GUI-linux-x64` if you are on Linux or `ExploreASL-GUI-darwin-x64` if you are on MacOS) that contains the GUI executable and all the necessary files to run the GUI.
+- A folder called `make` that contains the distributable installers for the GUI (i.e. .deb, .exe, .dmg).
 
 ## A Note about the Project's Structure
 

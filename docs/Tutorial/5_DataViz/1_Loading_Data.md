@@ -10,6 +10,6 @@ In order for a dataset to be loaded, the following must be specified:
 - `Which Partial Volume Correction Spreadsheet to Load`: Self-explanatory - are we interested in the partial volume corrected (PVC) or non-partial volume corrected (non-PVC) data?
 - `Atlases to Load`: Which regions of interest based on atlas do we want to have CBF values loaded from. :exclamation: **Note** :exclamation: that you can only load the atlases that were analyzed and indicated earlier when we were defining [ExploreASL's processing settings](../3_DataPar/3_ProcPars.md#population-module-parameters).
 
-<img src="../../../assets/img/Tutorial/DataViz/1_Loading_Data/DataViz_LoadDataFrame.png" />
+![DataViz_LoadDataFrame](../../assets/img/Tutorial/DataViz/1_Loading_Data/DataViz_LoadDataFrame.png)
 
 If performed correctly, clicking on `Proceed to Clarify Data Types` will proceed to the next step.

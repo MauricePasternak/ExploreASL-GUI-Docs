@@ -4,7 +4,7 @@
 
 To save or load a `DataPar.json` configuration file, click the `Save` or `Load` button located at the bottom of ExploreASL-GUI's main window.
 
-<img src="../../../assets/img/Tutorial/DataPar/4_Saving_And_Loading/DataPar_SaveAndLoad.png" />
+![DataPar_SaveAndLoad](../../assets/img/Tutorial/DataPar/4_Saving_And_Loading/DataPar_SaveAndLoad.png)
 
 ## Saving
 
@@ -14,11 +14,13 @@ After filling in the relevant parameters and clicking the `Save` button, one of 
 
 - The save occurs and you receive a confirmation message:
 
-<img src="../../../assets/img/Tutorial/DataPar/4_Saving_And_Loading/DataPar_SaveConfirmation.png" />
+![DataPar_SaveConfirmation](../../assets/img/Tutorial/DataPar/4_Saving_And_Loading/DataPar_SaveConfirmation.png)
+
+This `dataPar.json` configuration file will be saved at the study root folder (beside sourcedata, rawdata, and derivatives folders).
 
 We can examine the contents of the configuration file by opening it in a text editor:
 
-<img src="../../../assets/img/Tutorial/DataPar/4_Saving_And_Loading/DataPar_DataParJSON_Example.png" />
+![DataPar_DataParJSON_Example](../../assets/img/Tutorial/DataPar/4_Saving_And_Loading/DataPar_DataParJSON_Example.png)
 
 And in the event that there is a limitation to the GUI, it is possible to manually edit the fields in. This is not recommended, but can be done if necessary. For more information on the appropriate values to use in each field in the event of manual configuration, please refer to the [ExploreASL documentation](https://exploreasl.github.io/Documentation/1.10.0beta/ProcessingParameters/).
 
@@ -33,8 +35,10 @@ As with saving, after clicking the `Load` button and selecting the `dataPar.json
 
 In the example below, filepath fields for the ExploreASL directory and the study root directory were deliberately tampered with to demonstrate the warning message:
 
-<img src="../../../assets/img/Tutorial/DataPar/4_Saving_And_Loading/DataPar_InvalidLoad.png" />
+![DataPar_InvalidLoad](../../assets/img/Tutorial/DataPar/4_Saving_And_Loading/DataPar_InvalidLoad.png)
 
---- 
+---
+
+For this tutorial, we will simply re-specify the correct values and re-save before proceeding to the next step.
 
 With the data imported, validated, and global configurations define, we can finally proceed to run the main ExploreASL analysis.

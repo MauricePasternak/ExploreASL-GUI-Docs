@@ -11,17 +11,17 @@ For this tutorial, it is assumed you have:
 
 Throughout this tutorial, we will be using the following dataset as an example:
 
-<img src="../../../assets/img/Tutorial/Preface/Tutorials_Dataset/Preface_ProjectFolderStructure.png" />
+![Preface_ProjectFolderStructure](../../assets/img/Tutorial/Preface/Tutorials_Dataset/Preface_ProjectFolderStructure.png)
 
 If you've done your homework, this should look like the start of a BIDS dataset. If not, please familizarize yourself with the [BIDS specification](https://bids-specification.readthedocs.io/en/stable/).
 
-Throughout the GUI, there will be requests to provide a "Study Root Directory". In this example, this would be the folder called **`MyStudyRoot`**. This is the folder that, itself, will contain the BIDS-compliant subfolders:
+Throughout the GUI, there will be requests to provide a **"Study Root Directory"**. In this example, this would be the folder called **`MyStudyRoot`**. This is the folder that, itself, will contain the BIDS-compliant subfolders:
 
-- **`sourcedata`**; where your raw DICOMs are store
+- **`sourcedata`**; where your raw DICOMs are stored
 - **`rawdata`**; where your DICOMs are converted to NIfTI files
 - **`derivatives`**; where the ASL processing is performed
 
-For your own project, you will want to ensure at the very least that you have a **`sourcedata`** folder located under your own **`Study Root Directory`**.
+For your own project, you will want to ensure that, at the very least, you have a **`sourcedata`** folder located under your own **Study Root Directory**.
 
 Also, take note at the consistency of the folder structure that comes after **`sourcedata`**. This is a requirement for the GUI to be able to properly import your data from DICOMs to NIfTI files. This will be covered in further detail in the "[Define Filepaths and Folder Structure](../1_Import/1_Defining_Folder_Structure.md)" section of this tutorial.
 
@@ -42,4 +42,4 @@ Finally, inside these visit folders are the scan folders:
 - `T1`, containing the T1-weighted structural data
 - `M0`, for the proton density weighted image needed for normalizing perfusion weighted images into absolute units
 
-Note that these folder names are not absolutely necessary. They could have been called "FOO", "BAR", etc. As long as the folder names are consistent, you will be able to instruct the ExploreASL-GUI on what is what.
+**:information_source: Note:** These visit and scan folder names are not absolutely necessary. They could have been called "FOO", "BAR", etc. As long as the folder names are consistent, you will be able to instruct the ExploreASL-GUI on the meaning behind each folder.

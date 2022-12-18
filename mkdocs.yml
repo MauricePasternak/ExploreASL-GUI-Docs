@@ -1,5 +1,5 @@
 site_name: ExploreASL GUI
-repo_url: https://github.com/MauricePasternak/ExploreASL-GUI-Docs
+repo_url: https://github.com/MauricePasternak/ExploreASL-GUI
 site_url: https://github.com/MauricePasternak/ExploreASL-GUI-Docs
 
 nav:
@@ -51,7 +51,7 @@ nav:
           - "Interactive MRI View": "Tutorial/5_DataViz/6_MRI_View.md"
           - "Data Subsetting": "Tutorial/5_DataViz/7_Data_Subsetting.md"
           - "Exporting Plots": "Tutorial/5_DataViz/8_Exporting.md"
-          
+
   - License: "License.md"
   - Requirements: "Requirements.md"
   - FAQ: "FAQ/FAQ.md"
@@ -61,7 +61,7 @@ theme:
   name: "material"
   custom_dir: overrides
   language: en
-  logo: "assets/img/ExploreASLGUIIcon.png"
+  logo: "assets/img/ExploreASLGUI_Logo_DarkMode.png"
   favicon: "assets/img/favicon.ico"
   palette:
     scheme: "light"

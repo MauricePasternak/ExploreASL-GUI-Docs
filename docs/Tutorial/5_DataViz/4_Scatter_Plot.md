@@ -5,13 +5,14 @@
 ## Basic Scatter Plot
 
 At minimum, to render a scatterplot, you must specify the following:
+
 - `Graph Type`: `Scatterplot`
 - `X Axis`: Any continuous data type column
 - `Y Axis`: Any continuous data type column
 
 The following is an example of a basic scatterplot:
 
-<img src="../../../assets/img/Tutorial/DataViz/4_Scatter_Plot/DataViz_Plot_ScatterPlot_Basic.png">
+![DataViz_Plot_Scatterplot_Basic](../../assets/img/Tutorial/DataViz/4_Scatter_Plot/DataViz_Plot_Scatterplot_Basic.png)
 
 Initially, not very pretty, but certainly useable for basic data exploration. Let's see how we can make this plot more visually appealing.
 
@@ -19,7 +20,7 @@ Initially, not very pretty, but certainly useable for basic data exploration. Le
 
 The `Scatter Plot Visuals` panel allows you to adjust the appearance of the scatterplot. There are a considerable number of options available which will be summarized below:
 
-<img src="../../../assets/img/Tutorial/DataViz/4_Scatter_Plot/DataViz_Plot_ScatterPlot_Settings.png" />
+![DataViz_Plot_Scatterplot_Settings](../../assets/img/Tutorial/DataViz/4_Scatter_Plot/DataViz_Plot_Scatterplot_Settings.png)
 
 ### Color
 
@@ -70,4 +71,4 @@ Same as the x axis settings, but for the y axis.
 
 Let's see how we can make the scatterplot look a little nicer once the visual settings are adjusted:
 
-<img src="../../../assets/img/Tutorial/DataViz/4_Scatter_Plot/DataViz_Plot_ScatterPlot_Prettified.png">
+![DataViz_Plot_Scatterplot_Prettified](../../assets/img/Tutorial/DataViz/4_Scatter_Plot/DataViz_Plot_Scatterplot_Prettified.png)

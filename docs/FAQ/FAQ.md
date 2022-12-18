@@ -18,3 +18,6 @@ This program is open source and is hosted on Github. Please see the [**Issues**]
 
 Note: This is primarly for issues associated with the graphical user interface (GUI), not with the "backend" ExploreASL program. While it can be difficult to differentiate the origin of issues that arise (i.e. was it the GUI that failed or is it an issues with ExploreASL), a general rule of thumb is that if there is a message that appears with reference to a folder location of **"derivatives/ExploreASL"**, then it is likely an issue with ExploreASL itself. If there is no such message, then it is likely an issue with the GUI.
 
+> I made it as far as the "Verify BIDS Sidecars" step, but I don't see a field for the BIDS field `SliceTiming`. My dataset features 2D acquisitions, so I know this is a required field. What should I do?
+
+Comma-separated text fields are a future update for that module. For now, you can use ExploreASL's substitute field called "Slice Readout Time". You can find it by opening the navigation menu :arrow_right: Define Parameters :arrow_right: ASL Sequence Parameters. You should be able to see the field "Slice Readout Time" in the "Ancillary ASL Acquisition Backup Parameters" section.

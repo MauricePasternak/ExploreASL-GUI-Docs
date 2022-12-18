@@ -1,6 +1,6 @@
 # Contact
 
-## For ExploreASL-GUI related questions
+## For GUI related questions
 
 You can contact the maintainer and developer of ExploreASL-GUI, [Maurice Pasternak](mailto:maurice.pasternak@utoronto.ca).
 

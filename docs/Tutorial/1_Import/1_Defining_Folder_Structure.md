@@ -12,11 +12,11 @@ The import process requires knowledge about the underlying ExploreASL program an
 
 For clarification, here is what the structure of the ExploreASL from GitHub should look like:
 
-<img src="../../../assets/img/Installation/ExploreASLGithub_FolderExample.png" />
+![ExploreASLGithub_FolderExample](../../assets/img/Installation/ExploreASLGithub_FolderExample.png)
 
 And where is what the `xASL-latest` folder should look like for the compiled version of ExploreASL:
 
-<img src="../../../assets/img/Installation/ExploreASLCompiled_FolderExample.png">
+![ExploreASLCompiled_FolderExample](../../assets/img/Installation/ExploreASLCompiled_FolderExample.png)
 
 ## Folder Structure
 
@@ -26,15 +26,16 @@ Before we discuss the folder structure, let's first fill in the `Study Root Dire
 - `rawdata`
 - `derivatives`
 
-<img src="../../../assets/img/Tutorial/Import/1_Define_Folder_Structure/Import_DefineRuntimeEnv_Filepaths.png" />
+![Import_DefineRuntimeEnv_Filepaths](../../assets/img/Tutorial/Import/1_Define_Folder_Structure/Import_DefineRuntimeEnv_Filepaths.png)
 
 ### Proper Folder Structure
 
-Recall that the overview for this section mentioned that the GUI requires that your DICOM folder structure follow certain rules. The rules are as follows:
+Recall that the [overview for this section](./0_Overview.md) mentioned that the GUI requires that your DICOM folder structure follow certain rules. They are as follows:
 
 1.  #### **Compartmentalization**: 
 
     Every child, grandchild, etc. of the `sourcedata` folder must only contain **1 piece of information**. A piece of information is one of the following:
+    
     - A subject's designation
     - A visit's designation
     - A session's designation
@@ -42,9 +43,9 @@ Recall that the overview for this section mentioned that the GUI requires that y
 
     The following is an example of where this rule is violated:
 
-    <img src="../../../assets/img/Tutorial/Import/1_Define_Folder_Structure/BadStructure_NonCompartmentalizedExample.png" />
+    ![BadStructure_NonCompartmentalizedExample](../../assets/img/Tutorial/Import/1_Define_Folder_Structure/BadStructure_NonCompartmentalizedExample.png)
 
-    The issue here is that child folders of `sourcedata` have 2 pieces of information: the subject and the visit.
+    The issue here is that child folders of `sourcedata` have 2 pieces of information: the subject label and the visit label. This is the most common incompatibility your dataset may have with the import process. In the above example, the solution would be to move the visit label to the grandchild level.
 
 2. #### **Consistent Ordering**: 
     
@@ -52,7 +53,7 @@ Recall that the overview for this section mentioned that the GUI requires that y
 
     The following is an example of where this rule is violated:
 
-    <img src="../../../assets/img/Tutorial/Import/1_Define_Folder_Structure/BadStructure_InconsistentOrderingExample.png" />
+    ![BadStructure_InconsistentOrderingExample](../../assets/img/Tutorial/Import/1_Define_Folder_Structure/BadStructure_InconsistentOrderingExample.png)
 
     The issue here is that in some cases, a subject is found as the grandchild of `sourcedata`, while in other cases, a subject is found as a direct child of `sourcedata`. Same goes for the visit designations.
 
@@ -62,9 +63,9 @@ Recall that the overview for this section mentioned that the GUI requires that y
 
     The following is an example of where this rule is violated:
 
-    <img src="../../../assets/img/Tutorial/Import/1_Define_Folder_Structure/BadStructure_InconsistentNamingExample.png" />
+    ![BadStructure_InconsistentNamingExample](../../assets/img/Tutorial/Import/1_Define_Folder_Structure/BadStructure_InconsistentNamingExample.png)
 
-    The issue here is that there is a back-and-forth between using the numerical designation of Baseline and Followup versus the explicit text representation of those visit names.
+    The issue here is that there is a back-and-forth between using the numerical designation of Baseline and Followup versus the explicit text representation of those visit names. Again, this tends to be an uncommon issues, but may be present in datasets where site-specific naming conventions are used. Some folder renaming may be required to fix this issue in such an event.
 
 ### Specifying the Folder Structure
 
@@ -72,19 +73,21 @@ Now that we have discussed the rules for the folder structure, let's discuss how
 
 1. The number of folder levels that are between `sourcedata` and the DICOM files. If we look into our project folder, we can see that there are 3 levels between `sourcedata` and the DICOM files:
 
-    <img src="../../../assets/img/Tutorial/Import/1_Define_Folder_Structure/Import_DefineRuntimeEnv_FolderStructure_NLevels.png" />
+    ![Import_DefineRuntimeEnv_FolderStructure_NLevels](../../assets/img/Tutorial/Import/1_Define_Folder_Structure/Import_DefineRuntimeEnv_FolderStructure_NLevels.png)
 
     Therefore, we will enter `3` into the `Number of levels between sourcedata and DICOM files` field.
 
-2. What is found at each directory level. There are 5 options available:
+2. The piece of information is found at each directory level. There are 5 options available:
     - `Subject`
     - `Visit`
     - `Session` (sometimes called "Run" in literature)
     - `Scan`
     - `Ignore`
 
-    That last option is for folder levels that don't offer any valuable information. For example, some scanner typically have a folder called `DICOM` that contains either additional folders or the DICOM files themselves. This folder is not useful for the import process, so we can ignore it.
+    That last option is for folder levels that do not offer any valuable information. For example, some scanners typically output a folder called `DICOM` that contains either additional folders or the DICOM files themselves. This folder in an of itself is not useful for the import process, so we can ignore it.
 
-    <img src="../../../assets/img/Tutorial/Import/1_Define_Folder_Structure/Import_DefineRuntimeEnv_FolderStructure.png" />
+    ![Import_DefineRuntimeEnv_FolderStructure](../../assets/img/Tutorial/Import/1_Define_Folder_Structure/Import_DefineRuntimeEnv_FolderStructure.png)
+
+    **:information_source: Note:** At minimum, a dataset is reasonably expected to have a level of folders dedicated to subject names and a level of folders dedicated to scan names. Please consult your project's data manager if this requirement is somehow not met.
 
 At this point, no validation errors should be present. We can proceed to the next step by clicking the `Next` button located in the bottom right of the program.

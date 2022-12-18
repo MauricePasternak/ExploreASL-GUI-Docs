@@ -4,18 +4,20 @@
 
 Upon data type clarification, the plotting module will fully open and you will be greeted with the following view:
 
-<img src="../../../assets/img/Tutorial/DataViz/3_Plot_Overview/DataViz_Plot_LandingPage.png">
+![DataViz_Plot_LandingPage](../../assets/img/Tutorial/DataViz/3_Plot_Overview/DataViz_Plot_LandingPage.png)
 
 The plotting module is divided into three main sections:
+
 - The main plot area
 - The plot controls
 - The MRI views (seen below the main plot area)
 
 ## Plot Controls
 
-<img src="../../../assets/img/Tutorial/DataViz/3_Plot_Overview/DataViz_Plot_PlotControlParts.png">
+![DataViz_Plot_PlotControlParts](../../assets/img/Tutorial/DataViz/3_Plot_Overview/DataViz_Plot_PlotControlParts.png)
 
 These 4 panels govern the behavior of this module. In summary:
+
 - `Plot Variables`, where you specify the type of plot to be displayed (scatterplot for continuous x continuous, swarmplot for categorical x continuous, etc.)
 - `Subsetting Settings`, where you can subset the data by several criteria in order to focus on a specific series of subjects/visits/sessions/scans
 - `MRI View Controls`, for controlled the slices displayed for a loaded MRI volume
@@ -23,7 +25,7 @@ These 4 panels govern the behavior of this module. In summary:
 
 ## Plot Variables
 
-<img src="../../../assets/img/Tutorial/DataViz/3_Plot_Overview/DataViz_Plot_PlotVariables.png">
+![DataViz_Plot_PlotVariables](../../assets/img/Tutorial/DataViz/3_Plot_Overview/DataViz_Plot_PlotVariables.png)
 
 The `Plot Variables` panel controls the nature of the plot and the data that is displayed. Several inputs are available:
 

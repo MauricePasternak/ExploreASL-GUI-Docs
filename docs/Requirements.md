@@ -1,7 +1,7 @@
-
 # Requirements
 
-----
+---
+
 ## Software Requirements
 
 ### Operating System
@@ -24,10 +24,10 @@ If using the Compiled version of ExploreASL:
 - The compiled copy of **ExploreASL** <a href="mailto:ExploreASL.LAB@gmail.com" target="_blank">(please contact the ExploreASL team for a copy)</a> that is at least version 1.10.0 or newer.
 - A working copy of [**MATLAB Runtime R2019a**](https://www.mathworks.com/products/compiler/matlab-runtime.html) installed on your system. Note that this is subject to change depending on what version of MATLAB was used to compile ExploreASL. Ask the ExploreASL team for the clarification.
 
-----
+---
+
 ## Hardware Requirements
 
 - 8 GB RAM (minimal; 16 GB recommended)
 - 500 MB free disk space
 - Relatively recent CPU (4 cores or more)
-
