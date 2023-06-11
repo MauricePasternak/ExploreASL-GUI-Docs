@@ -83,8 +83,8 @@ The GUI's complexity requires a certain level of organization to keep things man
     |           |-> utilityFunctions (reusable functions for reducing code use)
     |           |-> GLOBALS.ts (global variables used throughout)
     |
-    |-> ipc (logic for type-safe IpcMain <-> IpcRenderer communication)
     |-> components (reuseable React components)
+    |-> ipc (logic for type-safe IpcMain <-> IpcRenderer communication)
     |-> pages (non-reuseable React components that make up the pages of the GUI)
     |-> stores (frontend-only collections of user-interface state)
     ... other files relate to project setup, package-handling, etc.

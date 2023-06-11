@@ -51,7 +51,8 @@ nav:
           - "Interactive MRI View": "Tutorial/5_DataViz/6_MRI_View.md"
           - "Data Subsetting": "Tutorial/5_DataViz/7_Data_Subsetting.md"
           - "Exporting Plots": "Tutorial/5_DataViz/8_Exporting.md"
-
+  - Extras:
+      - "Global Settings": "Extras/GlobalSettings.md"
   - License: "License.md"
   - Requirements: "Requirements.md"
   - FAQ: "FAQ/FAQ.md"
